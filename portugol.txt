@@ -1,0 +1,121 @@
+IDADE EM MESES, DIAS, HORAS E MINUTOS
+
+programa {
+	
+	inteiro anoNasceu
+	inteiro anoAtual
+	inteiro idadeDia
+	inteiro idadePessoa
+	real idadeSemana
+	inteiro idadePessoaMenor
+	real idadeSemanaMenor
+	inteiro idadeDiaMenor
+	
+	funcao inicio() {
+		escreva ("Em qual ano vocÍ nasceu?" + "\n")
+		leia (anoNasceu)
+		escreva ("Em qual m s voc  nasceu?" + "\n")
+		leia (mesNasceu)
+		
+		anoAtual = calend·rio.Ano_atual
+		mesAtual = calend·rio.Mes_atual
+		
+		idadePessoa = anoAtual - anoNasceu
+		idadeDia = idadePessoa * 365
+		idadeSemana = idadeDia / 7
+		idadePessoaMenor = idadePessoa - 1
+        idadeDiaMenor = idadePessoaMenor * 365
+        idadeSemanaMenor = idadeDiaMenor / 7
+		
+		se(mesAtual < mesNasceu){
+			escreva ("A sua idade È de: " + idadePessoaMenor + "\n")
+			escreva ("A sua idade em semanas È de: " + idadeSemanaMenor)
+		}
+		
+		senao{
+			escreva ("A sua idade È de: " + idadePessoa + "\n")
+			escreva ("A sua idade em semanas È de: " + idadeSemana)
+		}
+		
+		
+	}
+}
+
+
+
+CALCULO DA IDADE
+programa {
+	
+	inteiro idadePessoas
+	inteiro idadeMeses
+	inteiro idadeDias
+	inteiro idadeHoras
+	inteiro idadeMinutos
+	
+	
+	funcao inicio() {
+		escreva("Qual È a sua idade?")
+		leia (idadePessoas)
+		
+		idadeMeses = idadePessoas * 12
+		idadeDias = idadePessoas * 365
+		idadeHoras = idadeDias * 24
+		idadeMinutos = idadeHoras * 60
+		
+		escreva("Sua idade em meses È: " + idadeMeses + "\n")
+		escreva("Sua idade em dias È: " + idadeDias + "\n")
+		escreva("Sua idade em horas È: " + idadeHoras + "\n")
+		escreva("Sua idade em horas È: " + idadeMinutos)
+	}
+}
+
+
+
+
+AUMENTO DE SALARIO
+programa {
+	
+	inteiro idadePessoa
+	
+	funcao inicio() {
+		
+		escreva("Qual È a sua idade? \n")
+		leia (idadePessoa)
+		
+		se(idadePessoa < 5 ){
+		    escreva("vocÍ n„o È classific·vel \n")
+		}
+		
+		senao{
+		    se(idadePessoa <= 7){
+		        escreva("Sua categoria È: Infantil A \n")
+		    }
+		    
+		    senao{
+		        se(idadePessoa < 10 ){
+		        escreva("Sua categoria È: Infantil B \n")
+		    }
+		
+		        senao{
+		            se(idadePessoa <= 13){
+		            escreva("Sua categoria È: Juvenil A \n")
+		        }
+		            senao{
+		                se(idadePessoa <= 17){
+		                escreva("Sua categoria È: Juvenil B \n")
+		            
+		        }
+		        
+		                senao {
+		                    escreva("Sua categoria È: SÍnior \n")
+		            }
+		        }
+		    }
+		    
+		        
+		    }
+		}
+	}
+}
+
+}
